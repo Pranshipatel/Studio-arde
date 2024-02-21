@@ -1,0 +1,793 @@
+*{
+margin:0; 
+padding:0; 
+box-sizing:border-box; 
+}
+
+html,body{ 
+width:100%; 
+height:100%; 
+}
+body:active:active {
+    user-select: none;
+  }
+
+nav{
+    width: 100%;
+    height: 11vh;
+    background: transparent;
+    color: #fff;
+    padding: 1.3vw 2.4vw;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+}
+nav h1{
+    font-family:"pp neue montreal" ;
+    font-size: 1.7vw;
+    font-weight: 100;
+}
+nav img{
+    width: 4vw;
+    height: 4vw;
+}
+/* .mousefollower{
+    width: 2px;
+    height: 2vpx;
+    border-radius: none;
+    background: red; 
+} */
+#behindmouse{
+    height:13px ;
+    width:13px ;
+    border-radius: 1% !important;
+}
+#main{
+    overflow: hidden;
+    background: #0A0A0A;
+}
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background: #0A0A0A;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+#page1::-webkit-scrollbar{
+    display: none;
+}
+#move{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    gap: 3.1vw;
+    color: #fff;
+}
+
+#page1 h1{
+    font-size: 32.5vw;
+    font-family: "Victor Serif 30 Light";
+    font-weight: 100;
+    cursor:none;
+}
+#page1 img:nth-child(1){
+    position: absolute;
+    top: 9%;
+    left: -14.7%;
+    width: 20vw;
+    height: 18vw;
+    object-fit: cover;
+    z-index: 9;
+}
+#page1 img:nth-child(2){
+    position: absolute;
+    top:31.5%;
+    left: 25.5%;
+    width: 18vw;
+    height: 17.5vw;
+    object-fit: cover;
+    z-index: 9;
+}
+#page1 img:nth-child(3){
+    position: absolute;
+    top:60.5%;
+    left: 60%;
+    width: 18vw;
+    height: 18.5vw;
+    object-fit: cover;
+    z-index: 9;
+}
+#page1 img:nth-child(4){
+    position: absolute;
+    top: 8.8%;
+    right: -14.6%;
+    width: 20vw;
+    height: 19vw;
+    object-fit: cover;
+    z-index: 9;
+}
+#page1 #text{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 2.4vw;
+    font-family: pp neue montreal;
+    align-items: center;
+}
+#page1 #text h2,#page1 #text h3{
+    font-weight: 100;
+    font-size: 1.3vw;
+}
+
+
+#page2{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    font-family: "Victor Serif 30 Light";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 10vw;
+    flex-direction: column;
+    position: relative;
+}
+#page2 h1{
+    font-size: 7.7vw;
+    line-height: 8vw;
+    font-weight: 200;
+}
+#page2 h3{
+    font-family: pp neue montreal;
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+#page3{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    justify-content: space-evenly;
+    padding: 10vw 10vw;
+    padding-left: 34vw;
+}
+#page3 h1{
+    font-size: 7.8vw;
+    line-height: 7.2vw;
+    font-weight: 100;
+    font-family: "Victor Serif 30 Light";
+}
+#page3 h1 span{
+    display: inline-block;
+    border-bottom: 3px solid #fff;
+}
+#pg3{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-top: 4vw;
+    font-family: pp neue montreal;
+
+}
+#pg3 h2{
+    font-weight: 100;
+    font-size: 1.3vw;
+    padding-right: 12vw;
+}
+#pg3 h3{
+    font-weight: 100;
+    font-size: 1.3vw;
+    padding-right: 6vw;
+}
+
+#page4{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+#page4 h2{
+    font-size: 11vw;
+    text-align: center;
+    font-weight: 100;
+    font-family: "Victor Serif 30 Light";
+    line-height: 11vw;
+}
+
+#page4 img{
+    width: 20vw;
+    height: 18vw;
+    position: absolute;
+}
+#overlay{
+    width: 100%;
+    height: 260vh;
+    top: 0%;
+    position: absolute;
+    z-index: -5;
+}
+#page4 #img1{
+    top: 20%;
+    right: 4%;
+}
+#page4 #img2{
+    top: 23%;
+    left:25%;
+}
+#page4 #img3{
+    top: 35%;
+    left:-8%;
+}
+
+#page4 #img4{
+    top: 40%;
+    left:55%;
+}
+
+#page4 #img5{
+    top: 47%;
+    right:-5%;
+}
+#page4 #img6{
+    top: 47%;
+    left:20%;
+}
+#page4 #img7{
+    top: 58%;
+    left:-4%;
+}
+
+#page4 #img8{
+    top: 68%;
+    right:50%;
+}
+#page4 #img9{
+    top: 66%;
+    right:18%;
+}
+#page4 #img10{
+    top: 90%;
+    right:5%;
+}
+#page4 #img11{
+    top: 88%;
+    left: 0%;
+}
+#page5{
+    width: 100%;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5vw 5vw;
+    padding-left: 40vw;
+}
+#page5 h2{
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
+    font-family: pp neue montreal;
+    text-align: end;
+}
+#page5 h2 span{
+    display: inline-block;
+    border-bottom: 3px solid #fff;
+    line-height: 3.5vw;
+}
+
+
+#page6{
+    width: 100vw;
+    height: max-content;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4vw;
+    padding-left: 8vw;
+}
+#page6 img{
+    width: 2.3vw;
+    height: 2.3vw;
+    margin-top: 0.3vw;
+}
+#page6 h2{
+    font-size: 2.5vw;
+    font-family: pp neue montreal;
+    font-weight: 500;
+}
+#page6 h3{
+    font-size: 1.2vw;
+    font-family: pp neue montreal;
+    font-weight: 500;
+}
+#one{
+    width: calc((100vw / 3) - 8vw);
+    display: flex;
+    flex-direction: column;
+    /* gap: 3vw; */
+
+}
+
+#one #one-1{
+    display: flex;
+    gap: 1vw;
+}
+#one-2{
+    padding: 3vw;
+    display: none;
+}
+#two{
+    width: calc((100vw / 3) - 8vw);
+}
+#two #two-1{
+    display: flex;
+    gap: 1vw;
+}
+#two-2{
+    padding: 3vw;
+    display: none;
+}
+#three{
+    width: calc((100vw / 3) - 8vw);
+}
+#three #three-1{
+    display: flex;
+    gap: 1vw;
+}
+#three-2{
+    padding: 3vw;
+    display: none;
+}
+
+#page7{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background:rgb(61, 60, 60); */
+    color: #fff;
+    padding: 9vw;
+    padding-left: 10vw;
+    gap: 2vw;
+}
+#page7 h1{
+    font-size: 7.8vw;
+    font-family: "Victor Serif 30 Light";
+    font-weight: 100;
+    
+    z-index: 9;
+}
+#page7 .img{
+  width: 16vw;
+  height: 15vw;
+  display: none;
+  transition: all ease-in-out 0.7s;
+  position: absolute;
+  left: 80%;
+}
+#page7 h1 span:hover{
+    display: inline-block;
+    border-bottom: 3px solid #fff;
+    line-height: 7.4vw;
+}
+
+#page7 h2{
+    font-size: 1.9vw;
+    font-family: pp neue montreal;
+    font-weight: 300;
+}
+#page7 img{
+    width: 4.4vw;
+    height: 4.4vw;
+}
+#page7 #one{
+    width: 80%;
+    position: re;
+}
+#page7 #one1{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#page7 #one1:hover #oneimg{
+    display: block;
+}
+#page7 #one2{
+    padding: 3vw 0.4vw;
+    display: none;
+}
+
+#page7 #two{
+    width: 80%;
+}
+#page7 #two1{
+    display: flex;
+    position: relative;
+}
+#page7 #two1:hover #twoimg{
+    display: block;
+}
+#page7 #two2{
+    padding: 3.5vw 0.4vw;
+    display: none;
+}
+
+#page7 #three{
+    width: 80%;
+}
+#page7 #three1{
+    display: flex;
+    position: relative;
+}
+#page7 #three1:hover #threeimg{
+    display: block;
+}
+#page7 #three2{
+    padding: 3.5vw 0.4vw;
+    display: none;
+}
+
+
+#page7 #four{
+    width: 80%;
+}
+#page7 #four1{
+    display: flex;
+    position: relative;
+}
+#page7 #four1:hover #fourimg{
+    display: block;
+}
+#page7 #four2{
+    padding: 3.5vw 0.4vw;
+    display: none;
+}
+
+
+#page7 #five{
+    width: 80%;
+}
+#page7 #five1{
+    display: flex;
+    position: relative;
+}
+#page7 #five1:hover #fiveimg{
+    display: block;
+}
+#page7 #five2{
+    padding: 3.5vw 0.4vw;
+    display: none;
+}
+
+#page7 #six{
+    width: 80%;
+}
+#page7 #six1{
+    display: flex;
+    position: relative;
+}
+#page7 #six1:hover #siximg{
+    display: block;
+}
+#page7 #six2{
+    padding: 3.5vw 0.4vw;
+    display: none;
+}
+
+#page8{
+    width: 100%;
+    height:140vh;
+    padding: 5vw 6vw;
+   color: #fff;
+   padding-left: 42vw;
+   gap: 13vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+}
+#page8 #one img{
+    
+    width: 2.8vw;
+    height: 2.8vw;
+}
+#page8  h1{
+    font-size: 8vw;
+    font-weight: 100;
+    text-align: end;
+    line-height: 8vw;
+    font-family: "Victor Serif 30 Light";
+}
+#page8 #one{
+    width: 53vh;
+    height: fit-content;
+    display: flex;
+    margin-left: 28vw;
+    flex-direction: row;
+    gap: 1.3vw;
+    font-family: pp neue montreal;
+}
+#page8 #one1{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+#page8 #one h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#page8 #one h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page8 #overlay{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: end;
+    padding: 0vw 3vw;
+}
+#page8 .images{
+    width: 50vw;
+    height: 37vw;
+    
+}
+#page8 .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page9{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 4vw 4vw;
+}
+#page9 img{
+    width: 82vw;
+    height: 45vw;
+    object-fit: cover;
+}
+#page9 button{
+    padding: 1.2vw 2vw;
+    margin-top: 2vw;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 1vw;
+}
+#page9 h3{
+    font-size: 2vw;
+    font-family: pp neue montreal;
+    font-weight: 100;
+    margin-top: 3vw;
+}
+
+#page10{
+    width: 100%;
+    height: 90vh;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: pp neue montreal;
+    padding: 3vw 4vw;
+}
+#page10 #one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#page10 #one h1{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+#page10 #one h1 span{
+    border-bottom: 2px solid #fff;
+    transition: all ease-in-out 0.5s;
+}
+#page10 #one h1 span:hover{
+    border-bottom: 2px solid rgb(160, 169, 201) ;
+    color:rgb(160, 169, 201);
+    
+}
+#page10 #two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page10 #two h1{
+    font-size: 18vw;
+    font-weight: 100;
+    font-family: "Victor Serif 30 Light";
+
+}
+
+#page10 #three{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#page10 #three h2{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#page10 #three1{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.3vw;
+}
+#page10 #three span{
+    border-bottom: 2px solid #fff;
+    transition: all ease-in-out 0.5s;
+}
+#page10 #three span:hover{
+    border-bottom: 2px solid rgb(160, 169, 201) ;
+    color:rgb(160, 169, 201);
+    
+}
+
+#page11{
+    width: 100vw;
+    height: 70vh;
+    padding: 3.1vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page11 .images2{
+    width: 100%;
+    height: 96%;
+}
+#page11 img{
+    width:100%;
+    height: 100%;
+    
+}
+
+._canvas_container{
+    z-index: 999999 !important;
+}
+
+@media (max-width:700px) {
+    #page1{
+        width: 100vw;
+        height: 70vh;
+        background: #0A0A0A;
+        color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+    }
+    #page2{
+        width: 100vw;
+        height: 70vh;
+        color: #fff;
+        font-family: "Victor Serif 30 Light";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3vw 10vw;
+        flex-direction: column;
+        position: relative;
+    }
+    #page3{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        justify-content: space-evenly;
+        padding: 10vw 10vw;
+        padding-left: 34vw;
+    }
+    #page4{
+        width: 100%;
+        height:70vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+    }
+    #overlay{
+        width: 100%;
+        height: 140vh;
+        top: 0%;
+        position: absolute;
+        z-index: -5;
+    }
+    #page5{
+        width: 100%;
+        height: 30vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 5vw 5vw;
+        padding-left: 40vw;
+    }
+    #page8{
+        width: 100%;
+        height:70vh;
+        padding: 5vw 6vw;
+       color: #fff;
+       padding-left: 42vw;
+       gap: 13vw;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       position: relative;
+    }
+    #page8 #one{
+        display: none;
+    }
+    #page9{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        padding: 4vw 4vw;
+    }
+    #page10{
+        width: 100%;
+        height: 60vh;
+        color:#fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: pp neue montreal;
+        padding: 3vw 4vw;
+    }
+    #page11{
+        width: 100vw;
+        height: 30vh;
+        padding: 3.1vw 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}
